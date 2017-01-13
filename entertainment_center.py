@@ -2,7 +2,7 @@ from media import Movie
 from fresh_tomatoes import open_movies_page
 from tmdb_api import search_movie, get_movie_by_id
 
-
+# delete movie from list if valid index
 def remove_movie(movies, index):
     if index < len(movies):
         movies.pop(index)
@@ -11,7 +11,6 @@ def remove_movie(movies, index):
 
 #create new movie entry using user inputs if parameters are None
 def create_movie(title=None, trailer=None, poster=None, overview=None):
-    print()
 
     if title is None:
         title = input("Please enter a title: ")
@@ -27,8 +26,8 @@ def create_movie(title=None, trailer=None, poster=None, overview=None):
 
 # search tmdb for movie by title with user's input
 def create_movie_from_tmdb():
-    title = input("Please enter the title of the movie to search for: ")
 
+    title = input("Please enter the title of the movie to search for: ")
     movie_id = search_movie(title)
 
     if movie_id is None:
@@ -83,9 +82,9 @@ oceans_eleven = Movie('Ocean\'s Eleven',
                       "risks his chances of reconciling with ex-wife, Tess.")
 
 movies = [toy_story_3, saving_private_ryan, interstellar, oceans_eleven]
-option = None
 
 # allow user to edit list before generating web page
+option = None
 while(option != 'g'):
 
     # prompt user input
@@ -94,8 +93,9 @@ while(option != 'g'):
                    "d - Delete movie from list\n"
                    "g - Generate web page\n"
                    "s - Search movie database for movie\n"
-                   "v - View current movie list\n")
-    option = option.lower()
+                   "v - View current movie list\n").lower()
+
+    
 
     # add movie
     if option == 'a':
@@ -105,6 +105,7 @@ while(option != 'g'):
     elif option == 'd':
         
         # print movie choices w/ indices for selection i.e.
+        print()
         for index in range(len(movies)):
             print('%s: %s' % (str(index), movies[index].title))
         
@@ -123,6 +124,5 @@ while(option != 'g'):
     elif option == 'v':
         movie_title_list = [mov.title for mov in movies]
         print("\nCurrent movies to be processed: " + str(movie_title_list))
-
 
 open_movies_page(movies)
