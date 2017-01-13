@@ -95,8 +95,6 @@ while(option != 'g'):
                    "s - Search movie database for movie\n"
                    "v - View current movie list\n").lower()
 
-    
-
     # add movie
     if option == 'a':
         movies.append(create_movie())
