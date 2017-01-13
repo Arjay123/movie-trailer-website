@@ -36,10 +36,10 @@ When 'g' is selected, a webpage will be created in the same folder under the nam
 fresh_tomatoes.html
 ```
 
-# Webpage features
-The webpage displays all the movies added to the list in entertainment_center.py along with an image of the movie poster.<br>
-Hovering the mouse cursor over a movie poster will display the movie synopsis in a tooltip.<br>
-Clicking on a movie poster will display the movie's trailer in a YouTube video.
+## Webpage features
+-The webpage displays all the movies added to the list in entertainment_center.py along with an image of the movie poster.<br>
+-Hovering the mouse cursor over a movie poster will display the movie synopsis in a tooltip.<br>
+-Clicking on a movie poster will display the movie's trailer in a YouTube video.
 
-# Sample webpage
-![pageres]sample.png
+## Sample webpage
+![Sample Webpage](sample.png)
