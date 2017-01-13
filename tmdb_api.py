@@ -10,7 +10,7 @@ SEARCH_BASE = API_BASE + "/3/search/movie?" + API_KEY_QUERY_STR + "&query="
 MOVIE_BASE = API_BASE + "/3/movie/"
 
 POSTER_BASE = "https://image.tmdb.org/t/p/original"
-
+VIDEO_BASE = "http://youtube.com/watch?v="
 
 #search for movie by querying api w/ title, returns id if found, None if not
 def search_movie(query):
@@ -40,6 +40,7 @@ def get_movie_by_id(id):
 		results['poster'] = get_image_by_id(id)
 
 		#get trailer
+		results['trailer'] = get_trailer_by_id(id)
 
 	return results
 
@@ -53,4 +54,13 @@ def get_image_by_id(id):
 		return POSTER_BASE + data.json()['posters'][0]['file_path']
 
 
-print(get_movie_by_id(161)['poster'])
+#get movie trailer by id, returns url of trailer if found
+def get_trailer_by_id(id):
+	query_url = MOVIE_BASE + str(id) + "/videos?" + API_KEY_QUERY_STR
+	data = requests.get(query_url)
+
+	if data.status_code == 200 and len(data.json()) > 0:
+		return VIDEO_BASE + data.json()['results'][0]['key']
+
+
+print(get_movie_by_id(161)['trailer'])
