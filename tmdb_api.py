@@ -15,8 +15,6 @@ POSTER_BASE = "https://image.tmdb.org/t/p/original"
 VIDEO_BASE = "http://youtube.com/watch?v="
 
 # search for movie by querying api w/ title, returns id if found, None if not
-
-
 def search_movie(query):
     query_url = SEARCH_BASE + query
     data = requests.get(query_url)
