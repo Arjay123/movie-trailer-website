@@ -18,10 +18,32 @@ def create_movie():
 	return movie
 
 #init movies
-toy_story_3 = Movie('Toy Story 3', 'https://www.youtube.com/watch?v=JcpWXaA2qeg', 'http://www.heyuguys.com/images/2010/08/Toy-Story-3-Poster1.jpg')
-saving_private_ryan = Movie('Saving Private Ryan', 'https://www.youtube.com/watch?v=zwhP5b4tD6g', 'http://static.metacritic.com/images/products/movies/0/99efe57b9095e0f9be760550fbd98325.jpg')
-interstellar = Movie('Interstellar', 'https://www.youtube.com/watch?v=0vxOhd4qlnA', 'https://resizing.flixster.com/NF5iYPJi334dv-LDZiFt2cEwOJ4=/206x305/v1.bTsxMTE5MDg2MDtqOzE3Mjc0OzEyMDA7ODAwOzEyMDA')
-oceans_eleven = Movie('Ocean\'s Eleven', 'https://www.youtube.com/watch?v=u7VTkceSsEw', 'https://images-na.ssl-images-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg')
+toy_story_3 = Movie('Toy Story 3', 
+	'https://www.youtube.com/watch?v=JcpWXaA2qeg', 
+	'http://www.heyuguys.com/images/2010/08/Toy-Story-3-Poster1.jpg',
+	"Woody, Buzz, and the rest of Andy's toys haven't been played with in years. "
+	"With Andy about to go to college, the gang find themselves accidentally left at a nefarious day care center. "
+	"The toys must band together to escape and return home to Andy.")
+
+saving_private_ryan = Movie('Saving Private Ryan', 
+	'https://www.youtube.com/watch?v=zwhP5b4tD6g', 
+	'http://static.metacritic.com/images/products/movies/0/99efe57b9095e0f9be760550fbd98325.jpg',
+	"As U.S. troops storm the beaches of Normandy, three brothers lie dead on the battlefield, "
+	"with a fourth trapped behind enemy lines. Ranger captain John Miller and seven men are tasked with"
+	" penetrating German-held territory and bringing the boy home.")
+
+interstellar = Movie('Interstellar', 
+	'https://www.youtube.com/watch?v=0vxOhd4qlnA', 
+	'https://resizing.flixster.com/NF5iYPJi334dv-LDZiFt2cEwOJ4=/206x305/v1.bTsxMTE5MDg2MDtqOzE3Mjc0OzEyMDA7ODAwOzEyMDA',
+	"Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to"
+	"surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.")
+
+oceans_eleven = Movie('Ocean\'s Eleven', 
+	'https://www.youtube.com/watch?v=u7VTkceSsEw', 
+	'https://images-na.ssl-images-amazon.com/images/M/MV5BYzVmYzVkMmUtOGRhMi00MTNmLThlMmUtZTljYjlkMjNkMjJkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg',
+	"Less than 24 hours into his parole, charismatic thief Danny Ocean is already rolling out his next plan: In one night"
+	", Danny's hand-picked crew of specialists will attempt to steal more than $150 million from three Las Vegas casinos"
+	". But to score the cash, Danny risks his chances of reconciling with ex-wife, Tess.")
 
 movies = [toy_story_3, saving_private_ryan, interstellar, oceans_eleven]
 

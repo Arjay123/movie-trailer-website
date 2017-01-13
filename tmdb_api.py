@@ -35,7 +35,7 @@ def get_movie_by_id(id):
 
 		#get title
 		results['title'] = json['title']
-
+		results['overview'] = json['overview']
 		#get image
 		results['poster'] = get_image_by_id(id)
 
@@ -63,4 +63,4 @@ def get_trailer_by_id(id):
 		return VIDEO_BASE + data.json()['results'][0]['key']
 
 
-print(get_movie_by_id(161)['trailer'])
+print(get_movie_by_id(161)['overview'])
