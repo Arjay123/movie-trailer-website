@@ -1,0 +1,2 @@
+requests==2.12.4
+virtualenv==15.0.3
