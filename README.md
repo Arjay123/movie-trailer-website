@@ -2,6 +2,11 @@
 Project 1 for Udacity's Full Stack Engineer class. Creates a webpage with a list of movies specified by the user that contains 
 information like the movie title, synopsis, youtube video of the trailer and an image of the movie poster.
 
+Extra Features:
+-Added menus for users to edit movie list through the console before generating a web page
+-Added ability for users to search TMDB (The Movie Database) using their api
+
+
 ## Install
 Download the repo manually. Necessary libraries can be installed through the requirements.txt file and pip by using the command
 
