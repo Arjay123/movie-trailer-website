@@ -47,4 +47,4 @@ fresh_tomatoes.html
 -Clicking on a movie poster will display the movie's trailer in a YouTube video.
 
 ## Sample webpage
-![Sample Webpage](sample.png)
+![Sample Webpage](sample.png?raw=true)
